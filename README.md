@@ -2,9 +2,9 @@
 
 Bài test kỹ thuật cho vị trí Web Developer Intern tại Clique83.com
 
-## 🚀 Live Demo
+## 🚀 Live
 
-🔗 **https://ioftdk6parxl2.ok.kimi.link**
+🔗 **Link deploy: https://mini-dating-app-kimi.vercel.app 
 
 ## 📋 Mô tả dự án
 
@@ -46,7 +46,7 @@ src/
 
 ## 💾 Hệ thống lưu trữ
 
-### Phiên bản Deploy (Live Demo)
+### Phiên bản Deploy
 Dữ liệu được lưu trữ trong **Local Storage** vớI các key:
 - `dating_app_profiles`: Danh sách tất cả profiles
 - `dating_app_likes`: Danh sách các lượt thích
@@ -108,7 +108,7 @@ cd app
 npm run dev
 ```
 
-## 📝 Hướng dẫn sử dụng
+## 📝 Hướng dẫn test 
 
 ### Bước 1: Tạo Profile
 1. Click "Tạo Profile"
@@ -127,10 +127,10 @@ npm run dev
 
 ### Bước 4: Match
 1. Khi cả hai cùng thích nhau → Hiển thị "It's a Match!"
-2. Vào "Cặp đôI" để xem danh sách match
+2. Vào "Cặp đôi" để xem danh sách match
 
 ### Bước 5: Đặt lịch hẹn
-1. Vào "Lịch hẹn" hoặc click "Đặt lịch hẹn" trong trang Cặp đôI
+1. Vào "Lịch hẹn" hoặc click "Đặt lịch hẹn" trong trang Cặp đôi
 2. Thêm các khung giờ rảnh của bạn
 3. Chờ ngườI kia cũng chọn khung giờ
 4. Click "Tìm thờI gian trùng"
@@ -222,7 +222,7 @@ Return Data → Component Update
 
 ✅ **Validation:**
 - Email uniqueness check
-- Age range validation (3 tuần)
+- Age range validation (Trên 18 tuổi)
 - Cannot like yourself validation
 - Cannot like same person twice
 
@@ -278,7 +278,7 @@ Nếu có thêm thời gian, những điều này sẽ được cải thiện:
 **1. Video Call Integration**
    - Tích hợp Jitsi Meet hoặc Twilio
    - Cho phép video call trực tiếp từ match
-   - Lý do: Tăng tín cậy, reduce fake profiles, improve safety
+   - Lý do: Tăng tin cậy, reduce fake profiles, improve safety
 
 **2. Hoàn thiện Profile System**
    - Thêm interests/hobbies tags
@@ -305,20 +305,9 @@ Nếu có thêm thời gian, những điều này sẽ được cải thiện:
 - **Storage:** LocalStorage (Browser)
 - **Status:** ✅ Active
 
-### Cách Deploy Lên Vercel
-```bash
-# 1. Push code lên GitHub
-git push origin main
-
-# 2. Connect repo với Vercel (https://vercel.com/new)
-# 3. Set environment variables (nếu có)
-# 4. Deploy
-
-# Vercel sẽ tự động deploy mỗi khi push
-```
-
 ## 👨‍💻 Tác giả
 
+VÕ NGUYỄN NGỌC HUY
 Bài test kỹ thuật cho vị trí **Web Developer Intern - Clique83.com (2026)**
 
 ---
@@ -328,5 +317,3 @@ Bài test kỹ thuật cho vị trí **Web Developer Intern - Clique83.com (2026
 - Structure components theo feature-based pattern
 - All requirements từ bài test đã hoàn thành
 - Logic đã được test manually
-
-**Good Luck! 🍀**
