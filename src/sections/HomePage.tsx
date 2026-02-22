@@ -136,7 +136,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
                 <div className="bg-red-100 p-3 rounded-full">
                   <Heart className="w-6 h-6 text-red-600" />
                 </div>
-                <CardTitle className="text-xl">Cặp đôI</CardTitle>
+                <CardTitle className="text-xl">Cặp đôi</CardTitle>
               </div>
               <CardDescription>
                 Xem những người đã match với bạn và đặt lịch hẹn
@@ -147,7 +147,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
                 className="w-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600"
                 disabled={!currentUser}
               >
-                {currentUser ? 'Xem cặp đôI' : 'Vui lòng đăng nhập trước'}
+                {currentUser ? 'Xem cặp đôi' : 'Vui lòng đăng nhập trước'}
               </Button>
             </CardContent>
           </Card>
