@@ -24,7 +24,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
             Mini Dating App
           </h1>
           <p className="text-gray-600 text-lg max-w-md mx-auto">
-            Tìm kiếm ngườI đặc biệt của bạn. Kết nốI, thích và hẹn hò!
+            Tìm kiếm người đặc biệt của bạn. Kết nối, thích và hẹn hò!
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
             <CardHeader>
               <CardTitle className="text-pink-700">Xin chào, {currentUser.name}! 👋</CardTitle>
               <CardDescription>
-                Bạn đã đăng nhập vớI email: {currentUser.email}
+                Bạn đã đăng nhập với email: {currentUser.email}
               </CardDescription>
             </CardHeader>
           </Card>
@@ -89,7 +89,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
                     <CardTitle className="text-xl">Tạo Profile</CardTitle>
                   </div>
                   <CardDescription>
-                    Tạo profile mới để bắt đầu tìm kiếm ngườI phù hợp
+                    Tạo profile mới để bắt đầu tìm kiếm người phù hợp
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
