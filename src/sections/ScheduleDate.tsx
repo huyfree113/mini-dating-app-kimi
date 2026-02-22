@@ -113,7 +113,7 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
 
     // Validate time
     if (newSlot.startTime >= newSlot.endTime) {
-      toast.error('Giờ bắt đầu phảI nhỏ hơn giờ kết thúc');
+      toast.error('Giờ bắt đầu phải nhỏ hơn giờ kết thúc');
       return;
     }
 
@@ -129,7 +129,7 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
     }
 
     if (selectedDate > threeWeeksLater) {
-      toast.error('Chỉ có thể chọn trong vòng 3 tuần tớI');
+      toast.error('Chỉ có thể chọn trong vòng 3 tuần tới');
       return;
     }
 
@@ -187,7 +187,7 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
     }
 
     if (otherAvailability.length === 0) {
-      setResultMessage(`${otherUser?.name} chưa chọn thờI gian rảnh. Vui lòng chờ!`);
+      setResultMessage(`${otherUser?.name} chưa chọn thời gian rảnh. Vui lòng chờ!`);
       setResultSuccess(false);
       setShowResultDialog(true);
       return;
@@ -202,7 +202,7 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
         setResultMessage(`Hai bạn có date hẹn vào: ${response.scheduledDate.date} lúc ${response.scheduledDate.startTime}`);
         setResultSuccess(true);
       } else {
-        setResultMessage(response.message || 'Chưa tìm được thờI gian trùng. Vui lòng chọn lạI.');
+        setResultMessage(response.message || 'Chưa tìm được thời gian trùng. Vui lòng chọn lại.');
         setResultSuccess(false);
       }
       
@@ -252,7 +252,7 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
           <Card className="text-center py-12">
             <CardContent>
               <Calendar className="w-16 h-16 mx-auto text-gray-300 mb-4" />
-              <p className="text-gray-500">Bạn chưa có cặp đôI nào.</p>
+              <p className="text-gray-500">Bạn chưa có cặp đôi nào.</p>
               <Button 
                 onClick={() => onNavigate('profiles')}
                 className="mt-4 bg-gradient-to-r from-pink-500 to-purple-500"
@@ -281,7 +281,7 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
           </Button>
           <div>
             <h1 className="text-2xl font-bold text-gray-800">Đặt lịch hẹn</h1>
-            <p className="text-gray-600">Chọn thờI gian rảnh vớI {otherUser.name}</p>
+            <p className="text-gray-600">Chọn thời gian rảnh với {otherUser.name}</p>
           </div>
         </div>
 
@@ -306,9 +306,9 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
           {/* My Availability */}
           <Card>
             <CardHeader>
-              <CardTitle>ThờI gian rảnh của bạn</CardTitle>
+              <CardTitle>Thời gian rảnh của bạn</CardTitle>
               <CardDescription>
-                Chọn các khung giờ bạn rảnh trong 3 tuần tớI
+                Chọn các khung giờ bạn rảnh trong 3 tuần tới
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -392,10 +392,10 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
           {/* Other User's Availability */}
           <Card>
             <CardHeader>
-              <CardTitle>ThờI gian rảnh của {otherUser.name}</CardTitle>
+              <CardTitle>Thời gian rảnh của {otherUser.name}</CardTitle>
               <CardDescription>
                 {otherAvailability.length === 0 
-                  ? `${otherUser.name} chưa chọn thờI gian rảnh`
+                  ? `${otherUser.name} chưa chọn thời gian rảnh`
                   : `${otherUser.name} đã chọn ${otherAvailability.length} khung giờ`
                 }
               </CardDescription>
@@ -437,7 +437,7 @@ export function ScheduleDateComponent({ currentUser, selectedMatch, onNavigate, 
                 ) : (
                   <Calendar className="w-4 h-4 mr-2" />
                 )}
-                {isFinding ? 'Đang tìm...' : 'Tìm thờI gian trùng'}
+                {isFinding ? 'Đang tìm...' : 'Tìm thời gian trùng'}
               </Button>
               {myAvailability.length === 0 && (
                 <p className="text-gray-400 text-sm text-center mt-2">

@@ -114,7 +114,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
                 <CardTitle className="text-xl">Khám phá</CardTitle>
               </div>
               <CardDescription>
-                Xem danh sách các profile và thả tim ngườI bạn thích
+                Xem danh sách các profile và thả tim người bạn thích
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -139,7 +139,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
                 <CardTitle className="text-xl">Cặp đôI</CardTitle>
               </div>
               <CardDescription>
-                Xem những ngườI đã match vớI bạn và đặt lịch hẹn
+                Xem những người đã match với bạn và đặt lịch hẹn
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -164,7 +164,7 @@ export function HomePage({ currentUser, onNavigate, profiles }: HomePageProps) {
                 <CardTitle className="text-xl">Lịch hẹn</CardTitle>
               </div>
               <CardDescription>
-                Chọn thờI gian rảnh và tìm slot phù hợp vớI cặp đôI
+                Chọn thời gian rảnh và tìm slot phù hợp với cặp đôi
               </CardDescription>
             </CardHeader>
             <CardContent>

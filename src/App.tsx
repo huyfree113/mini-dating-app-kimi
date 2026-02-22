@@ -9,7 +9,6 @@ import type { Profile, Match, ViewState } from '@/types';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 import { profileAPI } from '@/services/api';
-
 function App() {
   const [currentView, setCurrentView] = useState<ViewState>('home');
   const [currentUser, setCurrentUser] = useState<Profile | null>(null);

@@ -150,7 +150,7 @@ export function ProfileList({ currentUser, onNavigate, profiles }: ProfileListPr
                     <div>
                       <CardTitle className="text-xl">{profile.name}</CardTitle>
                       <CardDescription className="flex items-center gap-2 mt-1">
-                        <span>{profile.age} tuổI</span>
+                        <span>{profile.age} tuổi</span>
                         <Badge variant="secondary" className={getGenderColor(profile.gender)}>
                           {getGenderLabel(profile.gender)}
                         </Badge>
@@ -220,7 +220,7 @@ export function ProfileList({ currentUser, onNavigate, profiles }: ProfileListPr
                   onNavigate('matches');
                 }}
               >
-                Xem cặp đôI
+                Xem cặp đôi
               </Button>
             </div>
           </DialogContent>
