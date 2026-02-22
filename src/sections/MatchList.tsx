@@ -76,8 +76,8 @@ export function MatchList({ currentUser, onNavigate, onSelectMatch, profiles }: 
             <ArrowLeft className="w-5 h-5" />
           </Button>
           <div>
-            <h1 className="text-2xl font-bold text-gray-800">Cặp đôI của bạn</h1>
-            <p className="text-gray-600">Những ngườI đã match vớI bạn</p>
+            <h1 className="text-2xl font-bold text-gray-800">Cặp Đôi của bạn</h1>
+            <p className="text-gray-600">Những người đã match với bạn</p>
           </div>
         </div>
 
@@ -86,9 +86,9 @@ export function MatchList({ currentUser, onNavigate, onSelectMatch, profiles }: 
           <Card className="text-center py-12">
             <CardContent>
               <Heart className="w-16 h-16 mx-auto text-gray-300 mb-4" />
-              <p className="text-gray-500">Chưa có cặp đôI nào.</p>
+              <p className="text-gray-500">Chưa có cặp đôi nào.</p>
               <p className="text-gray-400 text-sm mb-4">
-                Hãy thích những ngườI bạn quan tâm để tạo match!
+                Hãy thích những người bạn quan tâm để tạo match!
               </p>
               <Button 
                 onClick={() => onNavigate('profiles')}
